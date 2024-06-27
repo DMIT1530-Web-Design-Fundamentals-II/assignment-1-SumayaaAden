@@ -1,0 +1,256 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*Header and Nav Styles*/
+.menu-first {
+  background-color: #1e426e;
+  justify-content: flex-end;
+}
+.menu-first li {
+  text-transform: uppercase;
+  padding: 0.938rem;
+  border-left: 0.25rem solid white;
+}
+.menu-first ul li a {
+  color: white;
+  text-decoration: none;
+}
+.menu-first ul li:hover {
+  background-color: #789f4d;
+}
+h1 {
+  color: #214470;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1.25rem;
+}
+.menu-second ul {
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+.menu-second ul li a {
+  color: #183f6b;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+.menu-second ul a:hover {
+  color: #78a04d;
+  text-decoration: underline;
+}
+
+/* Hero Banner*/
+.hero-banner {
+  background-image: url("../img/img-your-home/banner-your-home.jpg");
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 7.65rem);
+}
+
+/*Main Section Styles*/
+section {
+  margin: 1.25rem 0;
+}
+section > .home-info {
+  gap: 2rem;
+}
+main section .home-info > div {
+  width: 31%;
+  line-height: 2.4;
+}
+main section .home-info img {
+  width: 100%;
+  display: block;
+}
+main section .home-info a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #1e426e;
+  padding: 0.5rem;
+}
+main section .home-info a:hover {
+  background-color: #2a5ea5;
+}
+.right-energy h2,
+.warm-home h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 1.875rem;
+  text-transform: uppercase;
+}
+.right-energy .flex img {
+  width: 48%;
+}
+.right-energy .flex div {
+  width: 52%;
+}
+.right-energy .flex div p {
+  font-size: 1.25rem;
+  padding-left: 1.875rem;
+  padding-bottom: 1.25rem;
+}
+.right-energy .flex div a {
+  font-size: 1.25rem;
+  padding-left: 1.875rem;
+  color: #0d4899;
+  text-decoration: none;
+}
+.right-energy .flex div a:hover {
+  color: #78a04d;
+}
+.warm-home .flex img {
+  width: 48%;
+}
+.warm-home .flex div {
+  width: 52%;
+}
+.warm-home .flex div p {
+  font-size: 1.25rem;
+  padding-left: 1.875rem;
+  padding-bottom: 1.25rem;
+}
+.warm-home .flex div a {
+  font-size: 1.25rem;
+  color: #0d4899;
+  text-align: center;
+  text-decoration: none;
+  padding-left: 1.875rem;
+}
+.warm-home .flex div a:hover {
+  color: #78a04d;
+}
+
+/* Aside styles*/
+aside {
+  background-color: #f5f5f5;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+}
+aside h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 1.875rem 0;
+  text-transform: uppercase;
+}
+aside .flex > div {
+  width: 26%;
+  background-color: white;
+  border: 0.063rem solid #ccc;
+  padding: 1.875rem;
+  text-align: center;
+}
+aside .flex h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+aside .flex a {
+  font-size: 1rem;
+  color: #0d4899;
+  text-decoration: none;
+}
+aside .flex a:hover {
+  color: #78a04d;
+}
+
+/* Footer styles*/
+footer {
+  background-color: #e8f4f9;
+  font-size: 1.15rem;
+}
+footer p {
+  padding: 1.25rem;
+}
+.menu-last li a {
+  text-decoration: none;
+  color: #183f6b;
+  justify-items: right;
+}
+.menu-last ul li a:hover {
+  color: #78a04d;
+}
+.menu-last li {
+  text-decoration: none;
+  padding: 1.25rem 0.625rem;
+}
+.menu-last {
+  margin-right: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 720px) {
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .menu-first ul li {
+    width: 15%;
+  }
+  .menu-second ul li {
+    padding-right: 1.875rem;
+  }
+  .hero-banner {
+    height: calc(100vh - 14rem);
+  }
+  main section .home-info > div {
+    width: 45%;
+    line-height: 2.4;
+  }
+  aside .flex {
+    gap: 1.25rem;
+  }
+  aside .flex > div {
+    width: 22%;
+  }
+  .right-energy .flex img,
+  .warm-home .flex img {
+    width: 90%;
+  }
+  aside .flex > div {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 960px) {
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .menu-first ul,
+  .menu-second ul,
+  .menu-last ul {
+    justify-content: center;
+  }
+  main section .home-info > div {
+    width: 28%;
+    line-height: 2.4;
+  }
+  aside .flex {
+    gap: 1.25rem;
+  }
+  aside .flex > div {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
